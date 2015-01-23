@@ -1,8 +1,8 @@
-public class Hero {
+public class Hero extends Entity{
 	
 	//Private Property************************
-	private int strength;
-	private int speed;
+	protected int strength;
+	protected int speed;
 	private int health;
 	
 	//Public Properties***********************
@@ -38,13 +38,6 @@ public class Hero {
 		System.out.println("***************************");
 	}
 	
-	//Private Methods*************************
-	private void generateAbilities() {
-		this.strength = (int)(Math.random() * 100 + 1);
-		this.speed = (int)(Math.random() * 100 + 1);
-		this.health = (int)(Math.random() * 100 + 1);
-	}
-	
 	public void fight() {
 		System.out.println(this.name + " is fighting");		
 	}
@@ -52,4 +45,12 @@ public class Hero {
 	public void run() {
 		System.out.println(this.name + " is running");
 	}	
+	
+	//Private Methods*************************
+	private void generateAbilities() {
+		this.strength = (int)(Math.random() * 100 + 1);
+		this.speed = (int)(Math.random() * 100 + 1);
+		this.health = (int)(Math.random() * 100 + 1);
+	}
+	
 }

@@ -4,16 +4,23 @@ public class Project {
 	public static void main(String[] args) {
 		
 		//Instantiate Hero
-		Hero hero = new Hero("Big Man");
-		hero.fight();
-		hero.run();
-		hero.showAbilities();
+		StrongMan strongman = new StrongMan("Big Man");
+		strongman.fight();
+		strongman.run();
+		strongman.showAbilities();
 		
-		//Instantiate Villian
+		//Instantiate Villain
 		Villian villian = new Villian("Sly Man");
 		villian.run();
 		villian.steals();
 		villian.showAbilities();
+		
+		//Instantiate Vigilante
+		Vigilate vigilate = new Vigilate("Ms. Savage");
+		vigilate.run();
+		vigilate.steals();
+		vigilate.dealsJustice();
+		vigilate.showAbilities();
 	}
 
 }
