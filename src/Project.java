@@ -8,6 +8,12 @@ public class Project {
 		hero.fight();
 		hero.run();
 		hero.showAbilities();
+		
+		//Instantiate Villian
+		Villian villian = new Villian("Sly Man");
+		villian.run();
+		villian.steals();
+		villian.showAbilities();
 	}
 
 }
