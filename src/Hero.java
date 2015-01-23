@@ -24,11 +24,12 @@ public class Hero {
 	//Constructor*****************************
 	public Hero(String name) {
 		this.name = name;
+		
 		generateAbilities();
 	}
 	
 	
-	//Public Meathods*************************
+	//Public Methods*************************
 	public void showAbilities() {
 		System.out.println("***************************");
 		System.out.println("Strength: " + this.strength);
